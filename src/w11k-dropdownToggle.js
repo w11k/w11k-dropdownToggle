@@ -145,7 +145,7 @@ angular.module('w11k.dropdownToggle').directive('w11kDropdownToggle', ['$documen
         shared.isOpen = function () { return ctrl.isOpen; };
       }
 
-      var removeAttrObserver = attrs.$observe('wwDropdownToggle', function (attrValue) {
+      var removeAttrObserver = attrs.$observe('w11kDropdownToggle', function (attrValue) {
         if (angular.isDefined(attrValue) && attrValue !== '') {
           var shared = scope.$eval(attrValue);
 
