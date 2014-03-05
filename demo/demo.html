@@ -40,30 +40,30 @@
       <div class="col-sm-4">
         <div class="dropdown">
           <div w11k-dropdown-toggle="dropdown1">
-            <button class="btn btn-default">Click to open dropdown 1</button>
+            <button class="btn btn-default">Click to toggle dropdown 1</button>
           </div>
           <div class="dropdown-menu">
             <h2>Dropdown 1 Content</h2>
-            Click outside to close dropdown or open other dropdown
-            <button class="btn btn-default" ng-click="dropdown1.close()">click</button>
+            To close dropdown click outside, open other dropdown or
+            <button class="btn btn-default" ng-click="dropdown1.close()">Click to close dropdown 1</button>
           </div>
         </div>
       </div>
 
       <div class="col-sm-4">
-        <button class="btn btn-default" ng-click="dropdown1.open($event);">Open 1</button>
-        <button class="btn btn-default" ng-click="dropdown2.open($event)">Open 2</button>
+        <button class="btn btn-default" ng-click="dropdown1.open($event);">Open dropdown 1</button>
+        <button class="btn btn-default" ng-click="dropdown2.open($event);">Open dropdown 2</button>
       </div>
 
       <div class="col-sm-4">
         <div class="dropdown">
           <div w11k-dropdown-toggle="dropdown2">
-            <button class="btn btn-default">Click to open dropdown 2</button>
+            <button class="btn btn-default">Click to toggle dropdown 2</button>
           </div>
           <div class="dropdown-menu">
             <h2>Dropdown 2 Content</h2>
-            Click outside to close dropdown or open other dropdown or
-            <button class="btn btn-default" ng-click="dropdown2.close()">click</button>
+            To close dropdown click outside, open other dropdown or
+            <button class="btn btn-default" ng-click="dropdown2.close()">Click to close dropdown 2</button>
           </div>
         </div>
       </div>
