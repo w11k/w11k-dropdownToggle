@@ -55,10 +55,6 @@ module.exports = function (grunt) {
             dest: '../w11k-dropdownToggle-bower/dist/'
           },
           {
-            src: 'LICENSE',
-            dest: '../w11k-dropdownToggle-bower/'
-          },
-          {
             src: 'bower.json',
             dest: '../w11k-dropdownToggle-bower/'
           }
