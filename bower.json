@@ -1,0 +1,10 @@
+{
+  "name": "w11k-dropdownToggle",
+  "version": "0.1.0",
+
+  "dependencies": {
+    "angular": "1.2.x"
+  },
+  "devDependencies": {
+  }
+}

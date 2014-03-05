@@ -1,0 +1,37 @@
+{
+  "name": "w11k-dropdownToggle",
+  "version": "0.1.0",
+
+  "description": "advanced AngularJS directive for Bootstrap dropdowns",
+  "keywords": [ "angular", "angularjs", "directive", "dropdown", "bootstrap" ],
+  "homepage": "https://github.com/w11k/w11k-dropdownToggle",
+  "bugs": "https://github.com/w11k/w11k-dropdownToggle/issues",
+
+  "author": {
+    "name": "WeigleWilczek GmbH",
+    "url": "http://www.w11k.com"
+  },
+  "contributors": [
+    "Philipp Burgmer"
+  ],
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pburgmer/w11k-dropdownToggle.git"
+  },
+
+  "licenses": [{
+      "type": "MIT"
+  }],
+
+  "devDependencies": {
+    "grunt": "0.4.2",
+    "grunt-contrib-clean": "0.5.0",
+    "grunt-contrib-jshint": "0.8.0",
+    "grunt-contrib-copy": "0.5.0",
+    "grunt-contrib-uglify": "0.4.0",
+
+    "grunt-bump": "0.0.13",
+    "grunt-conventional-changelog": "1.1.0"
+  }
+}
