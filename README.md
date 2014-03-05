@@ -31,6 +31,10 @@ Features:
 
 Attribute ```ww-dropdown-toggle``` activates the directive. It can reference an object in the current scope which is used to expose some functions (open, close, toggle, isOpen) to programatically control the dropdown.
     
+### Demo
+
+To run the included demo install bower components via ```bower install``` and open ```demo/demo.html``` with your browser.
+
 
 ## Roadmap
 
