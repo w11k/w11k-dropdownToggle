@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="demo">
+  <head>
+    <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="../src/w11k-dropdownToggle.js"></script>
+
+    <script type="text/javascript">
+      angular.module("demo", ["w11k.dropdownToggle"]);
+
+      angular.module("demo").controller("DemoCtrl", function ($scope) {
+        $scope.dropdown1 = {};
+        $scope.dropdown2 = {};
+
+        $scope.closeAll = function () {
+          $scope.dropdown1.close();
+          $scope.dropdown2.close();
+        };
+
+        $scope.toggleAll = function () {
+          $scope.dropdown1.toggle();
+          $scope.dropdown2.toggle();
+        };
+      });
+    </script>
+
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
+
+    <style type="text/css">
+      body {
+        padding: 2em;
+      }
+
+      .dropdown-menu {
+        padding: 0.5em;
+      }
+    </style>
+  </head>
+  <body ng-controller="DemoCtrl">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="dropdown">
+          <div w11k-dropdown-toggle="dropdown1">
+            <button class="btn btn-default">Click to toggle dropdown 1</button>
+          </div>
+          <div class="dropdown-menu">
+            <h2>Dropdown 1 Content</h2>
+            To close dropdown click outside, open other dropdown or
+            <button class="btn btn-default" ng-click="dropdown1.close()">Click to close dropdown 1</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <button class="btn btn-default" ng-click="dropdown1.open($event);">Open dropdown 1</button>
+        <button class="btn btn-default" ng-click="dropdown2.open($event);">Open dropdown 2</button>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="dropdown">
+          <div w11k-dropdown-toggle="dropdown2">
+            <button class="btn btn-default">Click to toggle dropdown 2</button>
+          </div>
+          <div class="dropdown-menu">
+            <h2>Dropdown 2 Content</h2>
+            To close dropdown click outside, open other dropdown or
+            <button class="btn btn-default" ng-click="dropdown2.close()">Click to close dropdown 2</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
