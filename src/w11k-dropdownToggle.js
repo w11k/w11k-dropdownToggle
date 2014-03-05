@@ -112,8 +112,8 @@ angular.module('w11k.dropdownToggle').directive('w11kDropdownToggle', ['$documen
             $element.parent().removeClass('open');
 
             // remove close handlers
-            $element.parent().bind('click', preventCloseMenu);
-            $document.unbind('click', ctrl.close);
+            $element.parent().unbind('click', preventCloseMenu);
+            $document.unbind('click', domClose);
             removeLocationChangeSuccessListener();
             removeLocationChangeSuccessListener = null;
 
