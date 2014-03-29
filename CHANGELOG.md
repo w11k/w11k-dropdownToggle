@@ -1,3 +1,12 @@
+<a name="0.1.1"></a>
+## 0.1.1 (2014-03-29)
+
+
+### Bug Fixes
+
+* **directive:** fix memory leak on scope destroy ([934be098](https://github.com/pburgmer/w11k-dropdownToggle/commit/934be0981bd3db63dbc6d991ced1b0bc627e0044))
+
+
 <a name="0.1.0"></a>
 ## 0.1.0 (2014-03-05)
 

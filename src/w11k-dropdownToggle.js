@@ -67,9 +67,9 @@ angular.module('w11k.dropdownToggle').directive('w11kDropdownToggle', ['$documen
 
             // add close handler
             // don't close the dropdown on click inside
-            $element.parent().bind('click', preventCloseMenu);
+            $element.parent().on('click', preventCloseMenu);
             // close dropdown on click outside
-            $document.bind('click', domClose);
+            $document.on('click', domClose);
 
             removeLocationChangeSuccessListener = $scope.$on('$locationChangeSuccess', function () {
               ctrl.close();
@@ -102,7 +102,19 @@ angular.module('w11k.dropdownToggle').directive('w11kDropdownToggle', ['$documen
         });
       };
 
+      function removeHandlers() {
+        // remove close handlers
+        $element.parent().off('click', preventCloseMenu);
+        $document.off('click', domClose);
+
+        if (angular.isFunction(removeLocationChangeSuccessListener)) {
+          removeLocationChangeSuccessListener();
+          removeLocationChangeSuccessListener = undefined;
+        }
+      }
+
       ctrl.close = function (domEvent) {
+
         if (ctrl.isOpen) {
           // call callback
           var callbackResult = executeCallback(ctrl.shared.onClose, domEvent);
@@ -111,12 +123,7 @@ angular.module('w11k.dropdownToggle').directive('w11kDropdownToggle', ['$documen
             // close dropdown
             $element.parent().removeClass('open');
 
-            // remove close handlers
-            $element.parent().unbind('click', preventCloseMenu);
-            $document.unbind('click', domClose);
-            removeLocationChangeSuccessListener();
-            removeLocationChangeSuccessListener = null;
-
+            removeHandlers();
             ctrl.isOpen = false;
             currentOpenDropdownCtrl = null;
           }
@@ -124,6 +131,11 @@ angular.module('w11k.dropdownToggle').directive('w11kDropdownToggle', ['$documen
 
         return !ctrl.isOpen;
       };
+
+      $scope.$on('$destroy', function () {
+        removeHandlers();
+      });
+
     }],
     link: function (scope, element, attrs, ctrl) {
 
@@ -136,7 +148,11 @@ angular.module('w11k.dropdownToggle').directive('w11kDropdownToggle', ['$documen
         });
       };
 
-      element.bind('click', domToggle);
+      element.on('click', domToggle);
+
+      scope.$on('$destroy', function () {
+        element.off('click', domToggle);
+      });
 
       function shareCtrlFunctions(shared) {
         shared.open = ctrl.open;
@@ -145,16 +161,13 @@ angular.module('w11k.dropdownToggle').directive('w11kDropdownToggle', ['$documen
         shared.isOpen = function () { return ctrl.isOpen; };
       }
 
-      var removeAttrObserver = attrs.$observe('w11kDropdownToggle', function (attrValue) {
+      attrs.$observe('w11kDropdownToggle', function (attrValue) {
         if (angular.isDefined(attrValue) && attrValue !== '') {
           var shared = scope.$eval(attrValue);
 
           if (angular.isObject(shared)) {
             ctrl.shared = shared;
             shareCtrlFunctions(shared);
-
-            removeAttrObserver();
-            removeAttrObserver = null;
           }
         }
       });

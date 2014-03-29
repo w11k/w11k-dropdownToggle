@@ -8,6 +8,8 @@
       angular.module("demo", ["w11k.dropdownToggle"]);
 
       angular.module("demo").controller("DemoCtrl", function ($scope) {
+        $scope.showExamples = true;
+
         $scope.dropdown1 = {};
         $scope.dropdown2 = {};
 
@@ -36,7 +38,11 @@
     </style>
   </head>
   <body ng-controller="DemoCtrl">
-    <div class="row">
+    <div style="margin-bottom: 1em;">
+      <button class="btn btn-default" ng-click="showExamples = !showExamples">Show / Hide examples</button>
+      to test scope destruction
+    </div>
+    <div class="row" ng-if="showExamples">
       <div class="col-sm-4">
         <div class="dropdown">
           <div w11k-dropdown-toggle="dropdown1">
