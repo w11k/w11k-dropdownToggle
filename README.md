@@ -21,7 +21,7 @@ Features:
 ### Usage
 
     <div class="dropdown">
-      <div ww-dropdown-toggle="dropdown">
+      <div w11k-dropdown-toggle="dropdown">
         ...
       </div>
       <div class="dropdown-menu">
@@ -29,7 +29,7 @@ Features:
       </div>
     </div>
 
-Attribute ```ww-dropdown-toggle``` activates the directive. It can reference an object in the current scope which is used to expose some functions (open, close, toggle, isOpen) to programatically control the dropdown.
+Attribute ```w11k-dropdown-toggle``` activates the directive. It can reference an object in the current scope which is used to expose some functions (open, close, toggle, isOpen) to programatically control the dropdown.
     
 ### Demo
 
