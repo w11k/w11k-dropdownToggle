@@ -1,3 +1,16 @@
+# w11k-dropdownToggle
+
+<a name="0.2.0"></a>
+## 0.2.0 (2014-09-29)
+
+
+### Features
+
+* **bower:**
+  * add support for ignoring files via 'ignore' ([9bdcf57f](https://github.com/pburgmer/w11k-dropdownToggle/commit/9bdcf57f5a6a3d9e481c3aec200d80cbaec599dd))
+  * add support for 'main' files ([0fd1e895](https://github.com/pburgmer/w11k-dropdownToggle/commit/0fd1e8959f77ed1895886a1955ed34c6b94239b6))
+
+
 <a name="0.1.1"></a>
 ## 0.1.1 (2014-03-29)
 
