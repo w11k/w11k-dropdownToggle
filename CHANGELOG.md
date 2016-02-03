@@ -1,5 +1,14 @@
 # w11k-dropdownToggle
 
+<a name="1.0.0"></a>
+## 1.0.0 (2016-02-03)
+
+
+#### Features
+
+* **dependency:** update angular, support 1.2 - 1.5 ([0f9118a3](https://github.com/pburgmer/w11k-dropdownToggle/commit/0f9118a34385e90a0c2c6f9fed70a82f03509abc))
+
+
 <a name="0.2.0"></a>
 ## 0.2.0 (2014-09-29)
 
