@@ -1,6 +1,6 @@
 {
   "name": "w11k-dropdownToggle",
-  "version": "0.2.0",
+  "version": "1.0.0",
 
   "description": "advanced AngularJS directive for Bootstrap dropdowns",
   "keywords": [ "angular", "angularjs", "directive", "dropdown", "bootstrap" ],
@@ -8,7 +8,7 @@
   "bugs": "https://github.com/w11k/w11k-dropdownToggle/issues",
 
   "author": {
-    "name": "WeigleWilczek GmbH",
+    "name": "w11k GmbH",
     "url": "http://www.w11k.com"
   },
   "contributors": [
