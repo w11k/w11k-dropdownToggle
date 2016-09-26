@@ -1,5 +1,16 @@
 # w11k-dropdownToggle
 
+<a name="1.0.1"></a>
+### 1.0.1 (2016-09-27)
+
+
+#### Features
+
+* **npm:**
+  * add dependencies to package.json ([b691cfce](https://github.com/pburgmer/w11k-dropdownToggle/commit/b691cfce915adf5b066a60aa16d08f751ebc2911))
+  * add main to package.json ([7a6abb1d](https://github.com/pburgmer/w11k-dropdownToggle/commit/7a6abb1daaeec6fab5533f0d10c059432e9573ea))
+
+
 <a name="1.0.0"></a>
 ## 1.0.0 (2016-02-03)
 
