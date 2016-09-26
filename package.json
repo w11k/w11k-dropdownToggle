@@ -24,6 +24,10 @@
       "type": "MIT"
   }],
 
+  "dependencies": {
+    "angular": ">= 1.2.0 < 1.6.0"
+  },
+
   "devDependencies": {
     "grunt": "0.4.2",
     "grunt-contrib-clean": "0.5.0",
