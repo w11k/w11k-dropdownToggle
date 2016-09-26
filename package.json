@@ -1,6 +1,6 @@
 {
   "name": "w11k-dropdownToggle",
-  "version": "1.0.0",
+  "version": "1.0.1",
 
   "description": "advanced AngularJS directive for Bootstrap dropdowns",
   "keywords": [ "angular", "angularjs", "directive", "dropdown", "bootstrap" ],
@@ -24,6 +24,10 @@
       "type": "MIT"
   }],
 
+  "dependencies": {
+    "angular": ">= 1.2.0 < 1.6.0"
+  },
+
   "devDependencies": {
     "grunt": "0.4.2",
     "grunt-contrib-clean": "0.5.0",
@@ -33,5 +37,7 @@
 
     "grunt-bump": "0.0.13",
     "grunt-conventional-changelog": "1.1.0"
-  }
+  },
+
+  "main": "src/w11k-dropdownToggle.js"
 }
