@@ -33,5 +33,7 @@
 
     "grunt-bump": "0.0.13",
     "grunt-conventional-changelog": "1.1.0"
-  }
+  },
+
+  "main": "src/w11k-dropdownToggle.js"
 }
