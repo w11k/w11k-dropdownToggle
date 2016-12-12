@@ -1,6 +1,6 @@
 {
   "name": "w11k-dropdownToggle",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/w11k-dropdownToggle.js",
   "ignore": [],
   "dependencies": {
