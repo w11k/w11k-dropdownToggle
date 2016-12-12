@@ -1,5 +1,14 @@
 # w11k-dropdownToggle
 
+<a name="1.0.2"></a>
+### 1.0.2 (2016-12-12)
+
+
+#### Bug Fixes
+
+* **dependencies:** mark as compatible with angular 1.6 ([49d5b123](https://github.com/pburgmer/w11k-dropdownToggle/commit/49d5b12303e61a8c438202b98865dd4421f0e9c9))
+
+
 <a name="1.0.1"></a>
 ### 1.0.1 (2016-09-27)
 
