@@ -1,6 +1,6 @@
 {
   "name": "w11k-dropdownToggle",
-  "version": "1.0.2",
+  "version": "1.0.3",
 
   "description": "advanced AngularJS directive for Bootstrap dropdowns",
   "keywords": [ "angular", "angularjs", "directive", "dropdown", "bootstrap" ],
@@ -25,7 +25,7 @@
   }],
 
   "dependencies": {
-    "angular": ">= 1.2.0 < 1.7.0"
+    "angular": ">= 1.2.0 < 2.0.0"
   },
 
   "devDependencies": {
